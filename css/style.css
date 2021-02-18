@@ -110,6 +110,7 @@ tr:hover{
 /*Req 7*/
 table{
     border: 2px solid #000000;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
 }
