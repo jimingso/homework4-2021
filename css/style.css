@@ -31,16 +31,21 @@ body{
   background-size: cover ;
   background-position: center;
   font-family: "Andika", sans-serif;
-  background-color: #DDDDDD;
   background-image: url("../images/pigeon-background.JPEG");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #DDDDDD;
+  /* background-size: cover; */
 /*Req 1*/
 }
 
+
 h1{
-  color: #B92751;
+  color: #c12258;
   font-size: 2em;
   text-align: center;
-  line-height: 200%;
+  line-height: 2;
   /*Req 2*/
 }
 
@@ -50,7 +55,7 @@ p{
 }
 
 p a, caption a{
-  color: #B92751;
+  color: #B21F50;
   font-size: 16px;
   text-decoration-line: underline;
   text-decoration-style: wavy;
@@ -60,9 +65,10 @@ p a, caption a{
 /*Req 5*/
 /*Add selector and rule here*/
 *:focus{
-  border-style: dashed;
+  /* border-style: dashed;
   border-width: 3px;
-  border-color: #417243;
+  border-color: #417243; */
+  border: 3px dashed #417243;
 }
 
 /*Req 6a*/
@@ -79,11 +85,13 @@ td{
   padding: 10px;
   text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
   background-color: #7e0820;
 }
 /*Req 6c*/
 .rowhead{
   border-top:2px solid #000000;
+  border-right:2px solid #000000;
 }
 
 /*Req 6d*/
@@ -96,7 +104,7 @@ tr:nth-child(even){
 }
 /*Req 6f*/
 tr:hover{
-  background-color: rgb(126,8,32,.25);
+  background-color: rgba(126,8,32,.25);
 }
 
 /*Req 7*/
@@ -106,7 +114,18 @@ table{
     margin-right: auto;
 }
 
-/* thead tr:first-child th:first-child{} */
+thead tr:first-child th:first-child{
+  border-top-left-radius:10px;
+}
+thead tr:first-child th:last-child{
+  border-top-right-radius:10px;
+}
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius:10px;
+}
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius:10px;
+}
 
 /*Add selectors and rules here*/
 
